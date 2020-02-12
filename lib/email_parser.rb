@@ -8,7 +8,7 @@ class EmailAddressParser
   LIST = []
   def initialize(email)
     @email = email
-    LIST << 
+    LIST << email
   end
   
   def parse
