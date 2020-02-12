@@ -5,15 +5,16 @@
 class EmailAddressParser
   attr_accessor :email
   
-  LIST = []
+  
   def initialize(email)
     @email = email
+    @@list = []
     a = email.split(" ")
     a.each do |x|
       b = x.chars
       b.delete(",")
       c = b.join
-      LIST << c
+       << c
     end
   end
   
