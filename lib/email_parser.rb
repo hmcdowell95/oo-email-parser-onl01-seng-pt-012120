@@ -7,6 +7,7 @@ class EmailAddressParser
   
   LIST = []
   def initialize(email)
+    @email = email
     a = self.split(", ")
     a.each do |x|
       LIST << x
