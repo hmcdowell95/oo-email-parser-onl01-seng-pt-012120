@@ -8,8 +8,11 @@ class EmailAddressParser
   LIST = []
   def initialize(email)
     @email = email
-    a = email.split(", ")
+    a = email.split(" ")
     a.each do |x|
+      b = x.chars
+      b.delete!(",")
+      
       LIST << x
     end
   end
