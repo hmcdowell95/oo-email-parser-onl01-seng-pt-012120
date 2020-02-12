@@ -14,12 +14,12 @@ class EmailAddressParser
       b = x.chars
       b.delete(",")
       c = b.join
-       << c
+      @@list << c
     end
   end
   
   def parse
-    z = LIST.uniq
+    z = @@list.uniq
     z
   end
 end
