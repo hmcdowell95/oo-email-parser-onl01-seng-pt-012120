@@ -7,4 +7,11 @@ class EmailAddressParser
   
   LIST = []
   def initialize(email)
-    LIST << email
+    @email = email
+    LIST << self
+  end
+  
+  def parse
+    a = LIST.uniq
+    a
+  end
