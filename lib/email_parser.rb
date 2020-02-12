@@ -11,9 +11,9 @@ class EmailAddressParser
     a = email.split(" ")
     a.each do |x|
       b = x.chars
-      b.delete!(",")
-      
-      LIST << x
+      b.delete(",")
+      c = b.join
+      LIST << c
     end
   end
   
