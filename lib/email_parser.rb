@@ -15,3 +15,4 @@ class EmailAddressParser
     a = LIST.uniq
     a
   end
+end
