@@ -8,10 +8,13 @@ class EmailAddressParser
   LIST = []
   def initialize(email)
     a = self.split(", ")
-    LIST << a
+    a.each do |x|
+      LIST << x
+    end
   end
   
   def parse
-    LIST
+    a = LIST.uniq
+    a
   end
 end
