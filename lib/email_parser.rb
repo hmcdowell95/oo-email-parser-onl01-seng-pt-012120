@@ -18,7 +18,7 @@ class EmailAddressParser
   end
   
   def parse
-    a = LIST.uniq
-    a
+    z = LIST.uniq
+    z
   end
 end
